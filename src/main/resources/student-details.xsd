@@ -36,6 +36,22 @@
     </xs:complexType>
   </xs:element>
 
+  <xs:element name="UpdateStudentDetailsRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name= "StudentDetails" type="tns:StudentDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="UpdateStudentDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name= "StudentDetails" type="tns:StudentDetails"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
   <xs:complexType name="StudentDetails">
     <xs:sequence>
       <xs:element name="id" type="xs:int"/>
